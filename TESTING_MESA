@@ -1,0 +1,13 @@
+For Tim:
+
+0. cd mesa
+1. Bump the version in VERSION
+2. Update/finalise the release notes
+3. Build a temporary tarball and check the scons build
+cd mesa && mkdir foo && cd foo && ../autogen.sh && make dist
+tar -xaf mesa-*xz && cd mesa-* && scons
+4. Release
+./modular/release.sh . --dry-run
+5. Check your write access for uploading the tarballs
+ssh annarchy.freedesktop.org mkdir -p /srv/ftp.freedesktop.org/pub/mesa/test123
+ssh annarchy.freedesktop.org rm -r /srv/ftp.freedesktop.org/pub/mesa/test123
