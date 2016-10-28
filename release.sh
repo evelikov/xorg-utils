@@ -605,6 +605,7 @@ process_module() {
     # srv_path="~/public_html$srv_path"
 
     # Check that the server path actually does exist
+    echo "Info: check in path exists on web server:"
     ssh $USER_NAME$hostname ls $srv_path >/dev/null 2>&1
     if [ $? -ne 0 ]; then
 	echo "Error: the path \"$srv_path\" on the web server does not exist."
@@ -614,6 +615,7 @@ process_module() {
 
     # Check for already existing tarballs
     for tarball in $targz $tarbz2 $tarxz; do
+	echo "Info: checking if tarball $tarball already exists on web server:"
 	ssh $USER_NAME$hostname ls $srv_path/$tarball  >/dev/null 2>&1
 	if [ $? -eq 0 ]; then
 	    if [ "x$FORCE" = "xyes" ]; then
