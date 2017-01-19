@@ -470,6 +470,21 @@ process_module() {
 	fi
     fi
 
+    # Check that the top commit has been pushed to remote
+    remote_top_commit_sha=`git  rev-list --max-count=1 $remote_name/$remote_branch`
+    if [ $? -ne 0 ]; then
+	echo "Error: unable to obtain top commit from the remote repository."
+	cd $top_src
+	return 1
+    fi
+    if [ x"$remote_top_commit_sha" != x"$local_top_commit_sha" ]; then
+	echo "Error: the local top commit has not been pushed to the remote."
+	local_top_commit_descr=`git log --oneline --max-count=1 $local_top_commit_sha`
+	echo "       the local top commit is: \"$local_top_commit_descr\""
+	cd $top_src
+	return 1
+    fi
+
     # If a tag exists with the tar name, ensure it is tagging the top commit
     # It may happen if the version set in configure.ac has been previously released
     tagged_commit_sha=`git  rev-list --max-count=1 $tag_name 2>/dev/null`
