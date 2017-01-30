@@ -1301,6 +1301,50 @@ build_all_modules() {
 	    build driver xf86-video-voodoo
 	    ;;
     esac
+    build driver glamor
+    build driver xf86-input-acecad
+    build driver xf86-input-aiptek
+    build driver xf86-input-calcomp
+    build driver xf86-input-citron
+    build driver xf86-input-digitaledge
+    build driver xf86-input-dmc
+    build driver xf86-input-dynapro
+    build driver xf86-input-elo2300
+    build driver xf86-input-elographics
+    build driver xf86-input-fpit
+    build driver xf86-input-hyperpen
+    build driver xf86-input-jamstudio
+    build driver xf86-input-magellan
+    build driver xf86-input-magictouch
+    build driver xf86-input-microtouch
+    build driver xf86-input-mutouch
+    build driver xf86-input-palmax
+    build driver xf86-input-penmount
+    build driver xf86-input-sample
+    build driver xf86-input-spaceorb
+    build driver xf86-input-summa
+    build driver xf86-input-tek4957
+    build driver xf86-input-ur98
+    build driver xf86-video-armsoc
+    build driver xf86-video-cyrix
+    build driver xf86-video-freedreno
+    build driver xf86-video-glide
+    build driver xf86-video-impact
+    build driver xf86-video-imstt
+    build driver xf86-video-modesetting
+    build driver xf86-video-newport
+    build driver xf86-video-nsc
+    build driver xf86-video-omap
+    build driver xf86-video-opentegra
+    build driver xf86-video-p690
+    build driver xf86-video-qxl
+    build driver xf86-video-radeonhd
+    build driver xf86-video-sunbw2
+    build driver xf86-video-vermilion
+    build driver xf86-video-vga
+    build driver xf86-video-via
+    build driver xf86-video-wayland
+    build driver xf86-video-xgi
     build data cursors
     build font encodings
     build font adobe-100dpi
