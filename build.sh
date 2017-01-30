@@ -1065,6 +1065,23 @@ build_all_modules() {
     build lib libXxf86dga
     build lib libXxf86vm
     build lib libpciaccess
+    build lib liblbxutil
+    build lib liboldX
+    build lib libXCalibrate
+    build lib libxcwm
+    build lib libXevie
+    build lib libXfontcache
+    build lib libxkbcommon
+    build lib libxkbui
+    build lib libXlg3d
+    build lib libXp
+    build lib libXpresent
+    build lib libXprintAppUtil
+    build lib libXprintUtil
+    build lib libXrandrUtils
+    build lib libXTrap
+    build lib libXxf86misc
+    build lib libXxf86rush
     build pixman ""
     build mesa drm
     build mesa mesa
