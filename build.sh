@@ -1073,19 +1073,33 @@ build_all_modules() {
     build app bdftopcf
     build app beforelight
     build app bitmap
+    build app compiz
+    build app constype
+    build app edid-decode
     build app editres
+    build app fdclock
     build app fonttosfnt
     build app fslsfonts
     build app fstobdf
+    build app glxcompmgr
+    build app grandr
     build app iceauth
     build app ico
+    build app intel-gen4asm
+    build app intel-gpu-tools
+    build app lbxproxy
     build app listres
     build app luit
+    build app makepsres
+    build app mdm
+    build app mkcfm
     build app mkcomposecache
     build app mkfontdir
     build app mkfontscale
     build app oclock
     build app rgb
+    build app pclcomp
+    build app proxymngr
     build app rendercheck
     build app rstart
     build app scripts
@@ -1093,6 +1107,7 @@ build_all_modules() {
     build app setxkbmap
     build app showfont
     build app smproxy
+    build app transset
     build app twm
     build app viewres
     build app x11perf
@@ -1103,6 +1118,7 @@ build_all_modules() {
     build app xclipboard
     build app xclock
     build app xcmsdb
+    build app xcompmgr
     build app xconsole
     build app xcursorgen
     build app xdbedizzy
@@ -1115,10 +1131,12 @@ build_all_modules() {
     build app xeyes
     build app xf86dga
     build app xfd
+    build app xfindproxy
     build app xfontsel
     build app xfs
     build app xfsinfo
     build app xgamma
+    build app xfwp
     build app xgc
     build app xhost
     build app xinit
@@ -1139,17 +1157,28 @@ build_all_modules() {
     build app xmh
     build app xmodmap
     build app xmore
+    build app xoo
+    build app xphelloworld
+    build app xplsprinters
     build app xpr
+    build app xprehashprinterlist
     build app xprop
     build app xrandr
     build app xrdb
     build app xrefresh
+    build app xresponse
+    build app xrestop
+    build app xrx
     build app xscope
     build app xset
     build app xsetmode
+    build app xsetpointer
     build app xsetroot
+    build app xshowdamage
     build app xsm
     build app xstdcmap
+    build app xtrap
+    build app xtsttopng
     build app xvidtune
     build app xvinfo
     build app xwd
