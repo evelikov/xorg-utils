@@ -987,22 +987,30 @@ build_all_modules() {
         CYGWIN*) build proto windowswmproto;;
     esac
     build proto bigreqsproto
+    build proto calibrateproto
     build proto compositeproto
     build proto damageproto
     build proto dmxproto
     build proto dri2proto
     build proto dri3proto
+    build proto evieproto
     build proto fixesproto
+    build proto fontcacheproto
     build proto fontsproto
     build proto glproto
     build proto inputproto
     build proto kbproto
+    build proto lg3dproto
+    build proto panoramixproto
+    build proto pmproto
     build proto presentproto
+    build proto printproto
     build proto randrproto
     build proto recordproto
     build proto renderproto
     build proto resourceproto
     build proto scrnsaverproto
+    build proto trapproto
     build proto videoproto
     build proto x11proto
     build proto xcmiscproto
@@ -1010,8 +1018,11 @@ build_all_modules() {
     build proto xf86bigfontproto
     build proto xf86dgaproto
     build proto xf86driproto
+    build proto xf86miscproto
+    build proto xf86rushproto
     build proto xf86vidmodeproto
     build proto xineramaproto
+    build proto xproto
     build xcb proto
     # Required by mesa and depends on xproto
     build util makedepend
