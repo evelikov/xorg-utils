@@ -1372,6 +1372,7 @@ build_all_modules() {
     build font bh-type1
     build font bitstream-100dpi
     build font bitstream-75dpi
+    build font bitstream-speedo
     build font bitstream-type1
     build font cronyx-cyrillic
     build font cursor-misc
