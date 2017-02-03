@@ -1398,6 +1398,9 @@ build_all_modules() {
     build util imake
     build util gccmakedep
     build util lndir
+    build util install-check
+    build util modular
+    build util xmkmf
     build xkeyboard-config ""
     return 0
 }
